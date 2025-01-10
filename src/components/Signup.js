@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 import { useNavigate  } from 'react-router-dom'
 
 export default function Signup({showAlert}) {
+      // const host = 'http://localhost:5000';
+      const host = process.env.REACT_APP_HOST
     const navigate = useNavigate();
     const [credentials, setCredentials] = useState({name:"", email: "", password: "",cpassword : ""}) 
     
@@ -16,7 +18,7 @@ export default function Signup({showAlert}) {
         }
     
         try {
-            const response = await fetch("http://localhost:5000/api/auth/createuser", {
+            const response = await fetch(`${host}/api/auth/createuser`, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",

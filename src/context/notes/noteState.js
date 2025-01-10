@@ -2,7 +2,8 @@ import noteContext from "./noteContext";
 import { useState } from "react";
 
 const NoteState = ({ showAlert, children }) => {
-    const host = "http://localhost:5000"
+   // const host = 'http://localhost:5000';
+    const host = process.env.REACT_APP_HOST
     const notesdata = [];
     
     const [notes, setNotes] = useState(notesdata);
@@ -48,7 +49,7 @@ const NoteState = ({ showAlert, children }) => {
         } else {
             setNotes(notes.concat(note))
             showAlert("Note added successfully", "success")
-            console.log(note)
+            
         }
 
     }
@@ -65,7 +66,7 @@ const NoteState = ({ showAlert, children }) => {
             }
         });
         const json = response.json();
-        console.log(json)
+        
         const newNotes = notes.filter((note) => { return note._id !== id })
         setNotes(newNotes)
         showAlert("Note deleted successfully", "success")

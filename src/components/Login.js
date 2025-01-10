@@ -3,6 +3,8 @@ import {  useLocation, useNavigate} from "react-router-dom";
 import Alert from './Alert';
 
 export default function Login({showAlert}) {
+     // const host = 'http://localhost:5000';
+     const host = process.env.REACT_APP_HOST
     let location = useLocation();
     let message = location.state?.message; 
   
@@ -22,7 +24,7 @@ export default function Login({showAlert}) {
     }, [location.state, location.pathname, navigate, showAlert]);
     const handleSubmit = async (e) => {
         e.preventDefault();
-        const response = await fetch("http://localhost:5000/api/auth/login", {
+        const response = await fetch(`${host}/api/auth/login`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

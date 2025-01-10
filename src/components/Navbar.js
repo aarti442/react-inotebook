@@ -21,9 +21,9 @@ export default function Navbar() {
                     <li className="nav-item">
                         <Link className={`nav-link  ${location.pathname === "/about" ? "active" : ""}`} to="/about">About iNotebook</Link>
                     </li>
-                    <li className="nav-item">
-                        <Link className={`nav-link ${location.pathname === "/" ? "active" : ""}`} aria-current="page" to="/">My Notes</Link>
-                    </li>
+                    {localStorage.getItem('token')? <li className="nav-item">
+                        <Link className={`nav-link ${location.pathname === "/" ? "active" : ""}`} aria-current="page" to="/">My Notes</Link> 
+                    </li> : ""}
 
                 </ul>
                {!localStorage.getItem('token')? <form className="d-flex"> 

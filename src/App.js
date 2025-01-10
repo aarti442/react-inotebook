@@ -30,7 +30,7 @@ function App() {
           <Navbar />
           <Alert alert={alert}/>
           <Routes>
-
+    
             <Route exact path="/" element={<Home showAlert={showAlert}/>}>
 
             </Route>
