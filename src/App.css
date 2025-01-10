@@ -1,0 +1,94 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+a.btn.mx-1.login {
+  background: #06b5f5;
+  color: #fff;
+}
+
+a.nav-link.active {
+  color: #04b0f0 !important;
+  font-weight: 600;
+}
+button.btn.logout-button {
+  background: #06b5f5;
+  color: white;
+}
+
+      .logout-button:hover {
+          background-color: #ff1a1a;
+      }
+      button.btn.modalbutton {
+  display: none;
+}
+.addSection.my-4 {
+  border-right: 1px solid #bbb9bb;
+  padding-right: 40px;
+}
+.action.txt-right {
+
+  position: absolute;
+  right: 0px;
+}
+.card-header.d-flex {
+  font-size: 13px;
+}
+.title {
+  background: #0000006e;
+  padding: 0 10px;
+  border-radius: 10px;
+  border: 0;
+}
+.action .fa {
+  cursor: pointer;
+}
+button.btn.modalbutton {
+  display: none !important;
+}
+.card-body, .card-header {
+  padding: 8px;
+}
+.card-text:last-child {
+  margin-bottom: 0;
+  line-height: 18px;
+  font-size: 13px;
+}
+button.btn.btn-primary {
+  background: #06b5f5;
+  border: 0;
+}
