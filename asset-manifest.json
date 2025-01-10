@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/react-inotebook/static/css/main.f5100d9f.css",
+    "main.js": "/react-inotebook/static/js/main.3b16aac8.js",
+    "static/js/156.f3b746ba.chunk.js": "/react-inotebook/static/js/156.f3b746ba.chunk.js",
+    "static/media/icon.png": "/react-inotebook/static/media/icon.c0229c23397a04af0ebc.png",
+    "index.html": "/react-inotebook/index.html",
+    "main.f5100d9f.css.map": "/react-inotebook/static/css/main.f5100d9f.css.map",
+    "main.3b16aac8.js.map": "/react-inotebook/static/js/main.3b16aac8.js.map",
+    "156.f3b746ba.chunk.js.map": "/react-inotebook/static/js/156.f3b746ba.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f5100d9f.css",
+    "static/js/main.3b16aac8.js"
+  ]
+}
